@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A7DB2D531546AFA000E38A6B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7DB2D521546AFA000E38A6B /* Cocoa.framework */; };
+		A7DB2D5D1546AFA000E38A6B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A7DB2D5B1546AFA000E38A6B /* InfoPlist.strings */; };
+		A7DB2D5F1546AFA000E38A6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DB2D5E1546AFA000E38A6B /* main.m */; };
+		A7DB2D631546AFA000E38A6B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = A7DB2D611546AFA000E38A6B /* Credits.rtf */; };
+		A7DB2D661546AFA000E38A6B /* Tunes_SpyAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DB2D651546AFA000E38A6B /* Tunes_SpyAppDelegate.m */; };
+		A7DB2D691546AFA000E38A6B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7DB2D671546AFA000E38A6B /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A7DB2D4E1546AFA000E38A6B /* Tunes Spy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tunes Spy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7DB2D521546AFA000E38A6B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		A7DB2D551546AFA000E38A6B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		A7DB2D561546AFA000E38A6B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A7DB2D571546AFA000E38A6B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A7DB2D5A1546AFA000E38A6B /* Tunes Spy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tunes Spy-Info.plist"; sourceTree = "<group>"; };
+		A7DB2D5C1546AFA000E38A6B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A7DB2D5E1546AFA000E38A6B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A7DB2D601546AFA000E38A6B /* Tunes Spy-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tunes Spy-Prefix.pch"; sourceTree = "<group>"; };
+		A7DB2D621546AFA000E38A6B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		A7DB2D641546AFA000E38A6B /* Tunes_SpyAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tunes_SpyAppDelegate.h; sourceTree = "<group>"; };
+		A7DB2D651546AFA000E38A6B /* Tunes_SpyAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tunes_SpyAppDelegate.m; sourceTree = "<group>"; };
+		A7DB2D681546AFA000E38A6B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7DB2D4B1546AFA000E38A6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7DB2D531546AFA000E38A6B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A7DB2D431546AFA000E38A6B = {
+			isa = PBXGroup;
+			children = (
+				A7DB2D581546AFA000E38A6B /* Tunes Spy */,
+				A7DB2D511546AFA000E38A6B /* Frameworks */,
+				A7DB2D4F1546AFA000E38A6B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A7DB2D4F1546AFA000E38A6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7DB2D4E1546AFA000E38A6B /* Tunes Spy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7DB2D511546AFA000E38A6B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7DB2D521546AFA000E38A6B /* Cocoa.framework */,
+				A7DB2D541546AFA000E38A6B /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A7DB2D541546AFA000E38A6B /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7DB2D551546AFA000E38A6B /* AppKit.framework */,
+				A7DB2D561546AFA000E38A6B /* CoreData.framework */,
+				A7DB2D571546AFA000E38A6B /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		A7DB2D581546AFA000E38A6B /* Tunes Spy */ = {
+			isa = PBXGroup;
+			children = (
+				A7DB2D641546AFA000E38A6B /* Tunes_SpyAppDelegate.h */,
+				A7DB2D651546AFA000E38A6B /* Tunes_SpyAppDelegate.m */,
+				A7DB2D671546AFA000E38A6B /* MainMenu.xib */,
+				A7DB2D591546AFA000E38A6B /* Supporting Files */,
+			);
+			path = "Tunes Spy";
+			sourceTree = "<group>";
+		};
+		A7DB2D591546AFA000E38A6B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A7DB2D5A1546AFA000E38A6B /* Tunes Spy-Info.plist */,
+				A7DB2D5B1546AFA000E38A6B /* InfoPlist.strings */,
+				A7DB2D5E1546AFA000E38A6B /* main.m */,
+				A7DB2D601546AFA000E38A6B /* Tunes Spy-Prefix.pch */,
+				A7DB2D611546AFA000E38A6B /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7DB2D4D1546AFA000E38A6B /* Tunes Spy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7DB2D6C1546AFA000E38A6B /* Build configuration list for PBXNativeTarget "Tunes Spy" */;
+			buildPhases = (
+				A7DB2D4A1546AFA000E38A6B /* Sources */,
+				A7DB2D4B1546AFA000E38A6B /* Frameworks */,
+				A7DB2D4C1546AFA000E38A6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tunes Spy";
+			productName = "Tunes Spy";
+			productReference = A7DB2D4E1546AFA000E38A6B /* Tunes Spy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A7DB2D451546AFA000E38A6B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Columbia Basin College";
+			};
+			buildConfigurationList = A7DB2D481546AFA000E38A6B /* Build configuration list for PBXProject "Tunes Spy" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A7DB2D431546AFA000E38A6B;
+			productRefGroup = A7DB2D4F1546AFA000E38A6B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7DB2D4D1546AFA000E38A6B /* Tunes Spy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7DB2D4C1546AFA000E38A6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7DB2D5D1546AFA000E38A6B /* InfoPlist.strings in Resources */,
+				A7DB2D631546AFA000E38A6B /* Credits.rtf in Resources */,
+				A7DB2D691546AFA000E38A6B /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7DB2D4A1546AFA000E38A6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7DB2D5F1546AFA000E38A6B /* main.m in Sources */,
+				A7DB2D661546AFA000E38A6B /* Tunes_SpyAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A7DB2D5B1546AFA000E38A6B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7DB2D5C1546AFA000E38A6B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A7DB2D611546AFA000E38A6B /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7DB2D621546AFA000E38A6B /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		A7DB2D671546AFA000E38A6B /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7DB2D681546AFA000E38A6B /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A7DB2D6A1546AFA000E38A6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A7DB2D6B1546AFA000E38A6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A7DB2D6D1546AFA000E38A6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tunes Spy/Tunes Spy-Prefix.pch";
+				INFOPLIST_FILE = "Tunes Spy/Tunes Spy-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A7DB2D6E1546AFA000E38A6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tunes Spy/Tunes Spy-Prefix.pch";
+				INFOPLIST_FILE = "Tunes Spy/Tunes Spy-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7DB2D481546AFA000E38A6B /* Build configuration list for PBXProject "Tunes Spy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7DB2D6A1546AFA000E38A6B /* Debug */,
+				A7DB2D6B1546AFA000E38A6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7DB2D6C1546AFA000E38A6B /* Build configuration list for PBXNativeTarget "Tunes Spy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7DB2D6D1546AFA000E38A6B /* Debug */,
+				A7DB2D6E1546AFA000E38A6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A7DB2D451546AFA000E38A6B /* Project object */;
+}
