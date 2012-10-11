@@ -23,6 +23,7 @@
     [statusItem setHighlightMode:TRUE];
     dnc = [NSDistributedNotificationCenter defaultCenter];
     [dnc addObserver:self selector:@selector(updateTrackInfo:) name:@"com.apple.iTunes.playerInfo" object:nil];
+    [dnc addObserver:self selector:@selector(spotifyTrack:) name:@"com.spotify.client.PlaybackStateChanged" object:nil];
     
     timer = [[NSTimer alloc] init];
     timer = [NSTimer scheduledTimerWithTimeInterval:.1 target:self selector:@selector(scroll) userInfo:nil repeats:YES];
@@ -43,7 +44,7 @@
     if( [[information objectForKey:@"Player State"] isEqualToString:@"Playing"])
        //Check to make sure something is playing
         {
-            if( [information objectForKey:@"Stream Title"] == nil) //For ITunes Radio
+            if( [information objectForKey:@"Stream Title"] == nil) //For iTunes Radio
                  {
                      //Normal song
                      s = [information valueForKey:@"Name"];
@@ -67,6 +68,35 @@
     }
     count = 0;
     [BigS retain];
+}
+- (void) spotifyTrack: (NSNotification *) notification
+{
+    if ([statusItem length] == 0)
+    {
+        statusItem = [[[NSStatusBar systemStatusBar] statusItemWithLength:pixelWidth]retain];
+        [statusItem setMenu:statusMenu];
+    }
+    NSDictionary *information = [notification userInfo];
+    count = 0;
+    NSString * s = [[NSString alloc] initWithFormat:@""];
+    if( [[information objectForKey:@"Player State"] isEqualToString:@"Playing"])
+        //Check to make sure something is playing
+    {
+            //Normal song
+            s = [information valueForKey:@"Name"];
+            s = [s stringByAppendingFormat:@" -- "];
+            s = [s stringByAppendingFormat:@"%@", [information valueForKey:@"Artist"]];
+            BigS = s;
+    }
+    else
+    {
+        //When song is paused or Spotify is Quit
+        [[NSStatusBar systemStatusBar] removeStatusItem:statusItem];
+        statusItem = [[[NSStatusBar systemStatusBar] statusItemWithLength:0]retain];
+    }
+    count = 0;
+    [BigS retain];
+
 }
 -(void) cascade
 {

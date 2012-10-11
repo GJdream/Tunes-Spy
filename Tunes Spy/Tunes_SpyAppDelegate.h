@@ -22,4 +22,6 @@
 -(void) cascade;
 -(void) scroll;
 -(IBAction)quit:(id)sender;
+-(void) updateTrackInfo:(NSNotification *)notification;
+-(void) spotifyTrack:(NSNotification*) notification;
 @end
